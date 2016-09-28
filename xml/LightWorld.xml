@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<areas>
+    <area name="Light World">
+        <node name="Link's House" id="LW001">
+            <edge to="L0028" require="break-bush" one-way="true"/>
+        </node>
+        <node name="Hyrule Castle Courtyard" id="LW002">
+            <edge to="L0001"/>
+            <edge to="L0029"/>
+        </node>
+        <node name="Hyrule Field" id="LW003">
+            <edge to="LBSanctuary"/>
+            <edge to="L1001"/>
+            <edge to="L2001"/>
+            <edge to="L2016"/>
+            <edge to="TheEnd" require="green-pendant;blue-pendant" one-way="true"/>
+        </node>
+
+        <node name="Triforce Room" id="TheEnd">
+            <item type="triforce"/>
+        </node>
+    </area>
+</areas>

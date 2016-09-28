@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<requirements>
+    <requirement id="bow"/>
+    <requirement id="silver-arrow"/>
+    <requirement id="blue-boomerang"/>
+    <requirement id="red-boomerang"/>
+    <requirement id="hookshot"/>
+    <requirement id="bomb"/>
+    <requirement id="powder"/>
+    <requirement id="mushroom"/>
+    <requirement id="bottle"/>
+    <requirement id="bee"/>
+    <requirement id="good-bee"/>
+    <requirement id="fairy"/>
+    <requirement id="fire-rod"/>
+    <requirement id="ice-rod"/>
+    <requirement id="bombos"/>
+    <requirement id="ether"/>
+    <requirement id="quake"/>
+    <requirement id="lamp"/>
+    <requirement id="hammer"/>
+    <requirement id="flute"/>
+    <requirement id="active-flute"/>
+    <requirement id="shovel"/>
+    <requirement id="bug-net"/>
+    <requirement id="book"/>
+    <requirement id="somaria"/>
+    <requirement id="byrna"/>
+    <requirement id="cape"/>
+    <requirement id="mirror"/>
+    <requirement id="boots"/>
+    <requirement id="power-glove"/>
+    <requirement id="titans-mitt"/>
+    <requirement id="flippers"/>
+    <requirement id="moon-pearl"/>
+
+    <requirement id="big-bomb"/>
+    <requirement id="chest"/>
+
+    <requirement id="sword1"/>
+    <requirement id="sword2"/>
+    <requirement id="sword3"/>
+    <requirement id="sword4"/>
+
+    <requirement id="shield1"/>
+    <requirement id="shield2"/>
+    <requirement id="shield3"/>
+
+    <requirement id="green-pendant"/>
+    <requirement id="blue-pendant"/>
+    <requirement id="red-pendant"/>
+
+    <requirement id="link"/>
+    <requirement id="super-bunny"/>
+
+    <requirement id="no-rain"/>
+    <requirement id="agahnim1"/>
+    <requirement id="agahnim2"/>
+
+    <requirement id="talking"/>
+    <requirement id="reading"/>
+    <requirement id="running"/>
+    <requirement id="pulling"/>
+    <requirement id="lifting"/>
+    <requirement id="swimming"/>
+
+
+    <requirement id="picking"/>
+    <requirement id="break-pot"/>
+    <requirement id="throw-pot"/>
+    <requirement id="break-bush"/>
+    <requirement id="fire"/>
+
+    <requirement id="kill-stalfos"/>
+    <requirement id="kill-eyegore"/>
+    <requirement id="kill-red-eyegore"/>
+    <requirement id="kill-popo"/>
+    <requirement id="kill-armos-knight"/>
+    <requirement id="kill-leever"/>
+    <requirement id="kill-sand-crab"/>
+
+    <requirement id="zelda-freed"/>
+    <requirement id="zelda-saved"/>
+
+
+</requirements>

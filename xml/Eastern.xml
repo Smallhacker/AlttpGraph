@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<areas>
+    <area name="Eastern Palace">
+        <area name="1F">
+            <room name="Entrance">
+                <node id="L1001">
+                    <edge to="L1002" require="break-pot" one-way="true"/>
+                    <edge from="L1002" one-way="true"/>
+                </node>
+            </room>
+            <room name="Pit Room">
+                <node id="L1002">
+                    <edge to="L1003"/>
+                </node>
+            </room>
+            <room name="Ball Room">
+                <node id="L1003">
+                    <edge to="L1005"/>
+                    <chest spoiler="[dungeon-L1-1F] Eastern Palace - big ball room"/>
+                </node>
+                <node id="L1004">
+                    <edge to="L1017" require="door:L101"/>
+                    <edge to="L1019"/>
+                </node>
+            </room>
+            <room name="Big Chest Room">
+                <node id="L1005">
+                    <edge to="L1007" require="break-pot" one-way="true"/>
+                    <edge from="L1007" one-way="true"/>
+                    <edge to="L1012" require="break-pot" one-way="true"/>
+                    <edge from="L1012" one-way="true"/>
+                </node>
+                <node id="L1006">
+                    <edge to="L1008"/>
+                    <edge to="L1013"/>
+                    <edge to="L1020" require="big-key:L1"/>
+                    <chest type="bow" require="big-key:L1" spoiler="[dungeon-L1-1F] Eastern Palace - big chest"/>
+                </node>
+            </room>
+            <room name="Right Balcony">
+                <node id="L1007">
+                    <edge to="L1009"/>
+                    <edge to="L1011"/>
+                </node>
+                <node id="L1008">
+                    <edge to="L1017" one-way="true"/>
+                </node>
+            </room>
+            <room name="Lone Anti-Fairy Room">
+                <node id="L1009">
+                    <edge to="L1010" require="break-pot" one-way="true"/>
+                    <edge from="L1010" one-way="true"/>
+                </node>
+            </room>
+            <room name="Map Room">
+                <node id="L1010">
+                    <edge to="L1011" one-way="true"/>
+                    <edge from="L1011" require="hookshot" one-way="true"/>
+                    <chest spoiler="[dungeon-L1-1F] Eastern Palace - map room"/>
+                </node>
+                <node id="L1011"/>
+            </room>
+            <room name="Left Balcony">
+                <node id="L1012">
+                    <edge to="L1015" one-way="true"/>
+                    <edge from="L1015B" one-way="true"/>
+                </node>
+                <node id="L1013">
+                    <edge from="L1014" one-way="true"/>
+                    <edge to="L1016"/>
+                </node>
+                <node id="L1014">
+                    <edge to="L1019" require="big-key:L1"/>
+                </node>
+            </room>
+            <room name="Stalfos Trap">
+                <node id="L1015">
+                    <edge to="L1015B" require="kill-stalfos"/>
+                    <edge to="L1015B" require="throw-pot"/>
+                    <edge from="L1016" one-way="true"/>
+                </node>
+                <node id="L1015B">
+                    <edge to="L1016" one-way="true"/>
+                </node>
+            </room>
+            <room name="Compass Room">
+                <node id="L1016">
+                    <chest spoiler="[dungeon-L1-1F] Eastern Palace - compass room"/>
+                </node>
+            </room>
+            <room name="Dark Anti-Fairy Room">
+                <node id="L1017">
+                    <edge to="L1018"/>
+                </node>
+            </room>
+            <room name="Dark Stalfos Room">
+                <node id="L1018">
+                    <item type="key:L101" require="break-pot"/>
+                </node>
+            </room>
+            <room name="Big Key Room">
+                <node id="L1019">
+                    <edge to="L1019B" questionable="damage-boost" require="break-pot" one-way="true"/>
+                    <edge to="L1019B" require="break-pot;kill-stalfos;kill-popo;kill-eyegore" one-way="true"/>
+                    <edge from="L1019B" one-way="true"/>
+                </node>
+                <node id="L1019B">
+                    <chest type="big-key:L1" spoiler="[dungeon-L1-1F] Eastern Palace - Big key"/>
+                </node>
+            </room>
+            <room name="Dark Eyegore Room">
+                <node id="L1020">
+                    <edge to="L1021" require="break-pot"/>
+                    <edge to="L1022" require="break-pot"/>
+                    <item type="key:L102" require="kill-eyegore"/>
+                </node>
+                <node id="L1021">
+                    <edge to="L1024" require="door:L102"/>
+                </node>
+                <node id="L1022">
+                    <edge to="L1023"/>
+                </node>
+            </room>
+            <room name="Rupee Room">
+                <node id="L1023"/>
+            </room>
+        </area>
+        <area name="2F">
+            <room name="Statue Room">
+                <node id="L1024">
+                    <edge to="L1025" require="break-pot" one-way="true"/>
+                    <edge from="L1025" one-way="true"/>
+                </node>
+            </room>
+            <room name="Eyegore Button Room">
+                <node id="L1025">
+                    <edge to="L1026"/>
+                </node>
+            </room>
+            <room name="Ball Button Room">
+                <node id="L1026">
+                    <edge to="L1027"/>
+                </node>
+            </room>
+            <room name="Red Eyegore Room">
+                <node id="L1027">
+                    <edge to="L1028" require="kill-red-eyegore;kill-stalfos" one-way="true"/>
+                    <edge from="L1028" one-way="true"/>
+                </node>
+            </room>
+            <room name="Twin Red Eyegore Room">
+                <node id="L1028">
+                    <edge to="L1029" require="kill-red-eyegore;kill-popo" one-way="true"/>
+                    <edge from="L1029" require="green-pendant" one-way="true"/>
+                </node>
+            </room>
+            <room name="Armos Chamber">
+                <node id="L1029">
+                    <edge to="L1029B" require="kill-armos-knight" one-way="true"/>
+                </node>
+                <node id="L1029B">
+                    <item type="green-pendant"/>
+                    <item type="heart-container"/>
+                    <edge to="L1001" one-way="true"/>
+                </node>
+            </room>
+        </area>
+    </area>
+</areas>

@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<areas>
+    <area name="Desert Palace">
+        <area id="B1F">
+            <room name="South Entrance">
+                <node id="L2001">
+                    <!-- TODO: Exit -->
+                    <edge to="L2002" require="break-pot"/>
+                    <edge to="L2009" require="break-pot"/>
+                </node>
+            </room>
+            <room name="North Corridor">
+                <node id="L2002">
+                    <edge to="L2003"/>
+                    <edge to="L2007"/>
+                    <edge to="L2008"/>
+                </node>
+            </room>
+            <room name="North-West Corridor">
+                <node id="L2003">
+                    <edge to="L2004"/>
+                    <edge to="L2005" one-way="true"/>
+                    <edge from="L2005B" one-way="true"/>
+                    <edge to="L2013"/>
+                </node>
+            </room>
+            <room name="Pillar Room">
+                <node id="L2004">
+                    <item type="key:L201" require="running"/>
+                </node>
+            </room>
+            <room name="Armos Trap Room">
+                <node id="L2005">
+                    <edge to="L2005B" require="break-pot" one-way="true"/>
+                    <edge from="L2006" one-way="true"/>
+                </node>
+                <node id="L2005B">
+                    <edge to="L2006" one-way="true"/>
+                </node>
+            </room>
+            <room name="Big Chest Room">
+                <node id="L2006">
+                    <chest type="power-glove" require="big-key:L2" spoiler="[dungeon-L2-B1] Desert Palace - big chest"/>
+                </node>
+            </room>
+            <room name="Map Room">
+                <node id="L2007">
+                    <chest require="break-pot" spoiler="[dungeon-L2-B1] Desert Palace - Map room"/>
+                </node>
+            </room>
+            <room name="North-East Corridor">
+                <node id="L2008">
+                    <edge to="L2026" one-way="true"/>
+                    <edge from="L2026B" one-way="true"/>
+                    <edge to="L2009"/>
+                </node>
+            </room>
+            <room name="Sand Crab Trap Room">
+                <node id="L2026">
+                    <edge to="L2026B" require="kill-leever;kill-sand-crab" one-way="true"/>
+                </node>
+                <node id="L2026B"/>
+            </room>
+            <room name="East Corridor">
+                <node id="L2009">
+                    <edge to="L2010" require="door:L201"/>
+                    <edge to="L2012"/>
+                </node>
+            </room>
+            <room name="Compass Room">
+                <node id="L2010">
+                    <edge to="L2011" require="kill-leever" one-way="true"/>
+                    <edge from="L2011" one-way="true"/>
+                    <chest spoiler="[dungeon-L2-B1] Desert Palace - compass room"/>
+                </node>
+            </room>
+            <room name="Cannon Room">
+                <node id="L2011">
+                    <chest type="big-key:L2" spoiler="[dungeon-L2-B1] Desert Palace - Big key room"/>
+                </node>
+            </room>
+            <room name="East Entrance">
+                <node id="L2012">
+                    <!-- TODO: Exit -->
+                </node>
+            </room>
+            <room name="West Corridor">
+                <node id="L2013">
+                    <edge to="L2014"/>
+                </node>
+            </room>
+            <room name="West Entrance">
+                <node id="L2014">
+                    <edge to="L2015"/>
+                    <!-- TODO: Exit -->
+                </node>
+            </room>
+            <room name="Fairy Room">
+                <node id="L2015"/>
+            </room>
+        </area>
+        <area id="1F">
+            <room name="North Entrance">
+                <node id="L2016">
+                    <!-- TODO: Exit -->
+                    <edge to="L2017"/>
+                </node>
+            </room>
+            <room name="Lower Tile Room">
+                <node id="L2017">
+                    <edge to="L2018" require="door:L202"/>
+                    <item type="key:L202" require="break-pot"/>
+                </node>
+            </room>
+        </area>
+        <area id="2F">
+            <room name="Bridge Room">
+                <node id="L2018">
+                    <edge to="L2019" one-way="true"/>
+                    <edge from="L2019B" one-way="true"/>
+                </node>
+            </room>
+            <room name="Beamos Trap Room">
+                <node id="L2019">
+                    <edge from="L2020" one-way="true"/>
+                    <edge to="L2019B" require="kill-leever"/>
+                </node>
+                <node id="L2019B">
+                    <edge to="L2020" one-way="true"/>
+                </node>
+            </room>
+            <room name="Upper Hallway">
+                <node id="L2020">
+                    <edge to="L2021" require="break-pot"/>
+                    <item type="key:L203" require="break-pot"/>
+                </node>
+                <node id="L2021">
+                    <edge to="L2022" require="door:L203"/>
+                </node>
+                <node id="L2022">
+                    <edge to="L2023" require="door:L204"/>
+                    <item type="key:L204" require="break-pot"/>
+                </node>
+            </room>
+            <room name="Wall Room">
+                <node id="L2023">
+                    <edge to="L2024" require="fire" one-way="true"/>
+                    <edge from="L2024" one-way="true"/>
+                </node>
+                <node id="L2024">
+                    <edge to="L2025" require="big-key:L2" one-way="true"/>
+                    <edge from="L2025" require="big-key:L2;blue-pendant" one-way="true"/>
+                </node>
+            </room>
+            <room name="Lanmola Chamber">
+                <node id="L2025">
+                    <edge to="L2025B" require="kill-lanmolas" one-way="true"/>
+                </node>
+                <node id="L2025B">
+                    <item type="blue-pendant"/>
+                    <item type="heart-container"/>
+                    <edge to="L2001" one-way="true"/>
+                </node>
+            </room>
+        </area>
+    </area>
+</areas>

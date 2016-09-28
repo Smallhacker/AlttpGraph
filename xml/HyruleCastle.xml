@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<areas>
+    <area name="Hyrule Castle Back Door">
+        <room name="Uncle Room">
+            <node id="L0028">
+                <edge to="L0029" require="sword1;shield1" one-way="true"/>
+                <edge from="L0029" one-way="true"/>
+                <item type="sword1"/>
+                <item type="shield1"/>
+            </node>
+        </room>
+        <room name="Chest Room">
+            <node id="L0029">
+                <chest spoiler="[cave-034] Hyrule Castle secret entrance"/>
+            </node>
+        </room>
+    </area>
+    <area name="Hyrule Castle">
+        <area name="2F">
+            <node id="L0002">
+                <edge to="L0018" require="zelda-freed" one-way="true"/>
+            </node>
+        </area>
+        <area name="1F">
+            <room name="Entrance">
+                <node id="L0001">
+                    <edge to="L0002"/>
+                    <edge to="L0003"/>
+                    <edge to="L0007"/>
+                </node>
+            </room>
+            <room name="Southwest Corner">
+                <node id="L0003">
+                    <edge to="L0004"/>
+                </node>
+            </room>
+            <room name="Northwest Corner">
+                <node id="L0004">
+                    <edge to="L0005"/>
+                </node>
+            </room>
+            <room name="North Corridor">
+                <node id="L0005">
+                    <edge to="L0006"/>
+                    <edge to="L0008"/>
+                </node>
+            </room>
+            <room name="Northeast Corner">
+                <node id="L0006">
+                    <edge to="L0007"/>
+                </node>
+            </room>
+            <room name="Southeast Corner">
+                <node id="L0007"/>
+            </room>
+        </area>
+        <area name="B1F">
+            <room name="Map Room">
+                <node id="L0008">
+                    <chest spoiler="[dungeon-C-B1] Hyrule Castle - map room"/>
+                    <item type="key:L001" require="kill-soldier"/>
+                    <edge to="L0009" require="door:L001"/>
+                </node>
+            </room>
+            <room name="Pit Room">
+                <node id="L0009">
+                    <edge to="L0011"/>
+                    <edge from="L0010" one-way="true"/>
+                </node>
+                <node id="L0010">
+                    <edge to="L0011"/>
+                </node>
+            </room>
+            <room name="Bridge Room">
+                <node id="L0011">
+                    <edge to="L0012" one-way="true"/>
+                    <edge from="L0012B" one-way="true"/>
+                </node>
+            </room>
+            <room name="Lone Green Guard Room">
+                <node id="L0012">
+                    <edge to="L0014" require="door:L002"/>
+                    <edge to="L0012B" require="kill-soldier" one-way="true"/>
+                    <edge from="L0012B" one-way="true"/>
+                    <edge from="L0013B" one-way="true"/>
+                </node>
+                <node id="L0012B">
+                    <edge to="L0013" one-way="true"/>
+                </node>
+            </room>
+            <room name="Boomerang Room">
+                <node id="L0013">
+                    <edge to="L0013B" require="kill-soldier" one-way="true"/>
+                    <edge from="L0013B" one-way="true"/>
+                    <chest type="blue-boomerang" spoiler="[dungeon-C-B1] Hyrule Castle - boomerang room"/>
+                </node>
+                <node id="L0013B">
+                    <item type="key:L002"/>
+                </node>
+            </room>
+            <room name="Descending Staircase Room">
+                <node id="L0014">
+                    <edge to="L0015"/>
+                </node>
+            </room>
+        </area>
+        <area name="B2F">
+            <room name="B2F Room">
+                <node id="L0015">
+                    <edge to="L0016"/>
+                </node>
+            </room>
+        </area>
+        <area name="B3F">
+            <room name="Jail Room">
+                <node id="L0016">
+                    <edge to="L0017" require="big-key:L0"/>
+                    <item type="big-key:L0" require="kill-ball-n-chain"/>
+                </node>
+                <node id="L0017">
+                    <chest spoiler="[dungeon-C-B3] Hyrule Castle - next to Zelda"/>
+                    <item type="zelda-freed"/>
+                </node>
+            </room>
+        </area>
+    </area>
+    <area name="Hidden Passage">
+        <area name="2F">
+            <room name="Room Behind Mantle">
+                <node id="L0018">
+                    <edge to="L0019"/>
+                </node>
+            </room>
+        </area>
+        <area name="1F">
+            <room name="Descending Room">
+                <node id="L0019">
+                    <edge to="L0020"/>
+                </node>
+            </room>
+            <room name="Ascending Room">
+                <node id="L0026">
+                    <edge to="L0027"/>
+                </node>
+            </room>
+            <room name="Room Behind Sanctuary">
+                <node id="L0027">
+                    <edge to="L0027B" require="pulling" one-way="true"/>
+                </node>
+                <node id="L0027B">
+                    <item type="zelda-saved"/>
+                    <edge to="LBSanctuary" require="zelda-saved"/>
+                </node>
+            </room>
+        </area>
+        <area name="B1F">
+            <room name="Cross Room">
+                <node id="L0020">
+                    <edge to="L0021" require="door:L003"/>
+                    <chest type="key:L003" spoiler="[dungeon-C-B1] Escape - first B1 room"/>
+                </node>
+            </room>
+            <room name="East Sewer Room">
+                <node id="L0021">
+                    <edge to="L0022"/>
+                </node>
+            </room>
+            <room name="West Sewer Room">
+                <node id="L0022">
+                    <edge to="L0023"/>
+                </node>
+            </room>
+            <room name="Rat Key Room">
+                <node id="L0023">
+                    <edge to="L0024" require="door:L004"/>
+                    <item type="key:L004" require="kill-rat"/>
+                </node>
+            </room>
+            <room name="Push Block Room">
+                <node id="L0024">
+                    <edge to="L0025" require="bomb" one-way="true"/>
+                    <edge to="L0026" one-way="true"/>
+                </node>
+            </room>
+            <room name="Secret Treasure Room">
+                <node id="L0025">
+                    <chest type="bomb" spoiler="[dungeon-C-B1] Escape - final basement room [left chest]"/>
+                    <chest spoiler="[dungeon-C-B1] Escape - final basement room [middle chest]"/>
+                    <chest spoiler="[dungeon-C-B1] Escape - final basement room [right chest]"/>
+                </node>
+            </room>
+        </area>
+    </area>
+    <area name="Sanctuary">
+        <node id="LBSanctuary">
+            <chest type="heart-container" spoiler="[dungeon-C-1F] Sanctuary"/>
+        </node>
+    </area>
+</areas>
